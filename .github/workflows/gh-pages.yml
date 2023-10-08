@@ -18,7 +18,7 @@ jobs:
       - name: Build
         run: npm run build
          env:
-            react_app_instagram_access_token: ${{ secrets.REACT_APP_OPENAI_API_KEY }}
+            REACT_APP_OPENAI_API_KEY: ${{ secrets.REACT_APP_OPENAI_API_KEY }}
 
       - name: Cache dependencies
         uses: actions/cache@v2
