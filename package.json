@@ -58,7 +58,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://songtak.github.io/MtRecommender/",
+  "homepage": "https://songtak.github.io/saju-with-chatgpt/",
   "devDependencies": {
     "@types/lodash": "^4.14.199",
     "gh-pages": "^6.0.0"
