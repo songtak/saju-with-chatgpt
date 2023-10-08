@@ -8,6 +8,10 @@ const OPENAI_ENDPOINT = "https://api.openai.com/v1/chat/completions";
 //   "https://api.openai.com/v1/models/gpt-3.5-turbo-instruct";
 
 export const getResponseFromGPT = async (prompt) => {
+  console.log(
+    "process.env.REACT_APP_OPENAI_API_KEY",
+    process.env.REACT_APP_OPENAI_API_KEY
+  );
   const response = await axios.post(
     OPENAI_ENDPOINT,
     {
@@ -26,8 +30,7 @@ export const getResponseFromGPT = async (prompt) => {
     },
     {
       headers: {
-        // Authorization: `Bearer ${process.env.REACT_APP_OPENAI_API_KEY}`,
-        Authorization: `Bearer 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`,
+        Authorization: `Bearer ${process.env.REACT_APP_OPENAI_API_KEY}`,
         "Content-Type": "application/json",
       },
     }
