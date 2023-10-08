@@ -150,6 +150,7 @@ const App = () => {
 
   return (
     <div className="App">
+      <div style={{ paddingTop: "30px", fontSize: "30" }}>해피사주</div>
       {/* <div>
         <form onSubmit={handleOnSubmit}>
           <input
@@ -211,6 +212,8 @@ const App = () => {
         </>
       )}
       {typeof response !== "undefined" && <p>{response}</p>}
+
+      <div style={{ paddingTop: "40px" }}>songtak 2023.10.08</div>
     </div>
   );
 };
