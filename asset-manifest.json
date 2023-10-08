@@ -1,15 +1,27 @@
 {
   "files": {
     "main.css": "/saju-with-chatgpt/static/css/main.6e30ed18.css",
+<<<<<<< HEAD
     "main.js": "/saju-with-chatgpt/static/js/main.2845207c.js",
     "static/js/787.6a7d8588.chunk.js": "/saju-with-chatgpt/static/js/787.6a7d8588.chunk.js",
     "index.html": "/saju-with-chatgpt/index.html",
     "main.6e30ed18.css.map": "/saju-with-chatgpt/static/css/main.6e30ed18.css.map",
     "main.2845207c.js.map": "/saju-with-chatgpt/static/js/main.2845207c.js.map",
+=======
+    "main.js": "/saju-with-chatgpt/static/js/main.d1e1f72a.js",
+    "static/js/787.6a7d8588.chunk.js": "/saju-with-chatgpt/static/js/787.6a7d8588.chunk.js",
+    "index.html": "/saju-with-chatgpt/index.html",
+    "main.6e30ed18.css.map": "/saju-with-chatgpt/static/css/main.6e30ed18.css.map",
+    "main.d1e1f72a.js.map": "/saju-with-chatgpt/static/js/main.d1e1f72a.js.map",
+>>>>>>> 74be828aef1b365c93f0e9d299b421e9de5097a4
     "787.6a7d8588.chunk.js.map": "/saju-with-chatgpt/static/js/787.6a7d8588.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6e30ed18.css",
+<<<<<<< HEAD
     "static/js/main.2845207c.js"
+=======
+    "static/js/main.d1e1f72a.js"
+>>>>>>> 74be828aef1b365c93f0e9d299b421e9de5097a4
   ]
 }
