@@ -12,7 +12,7 @@ export const getResponseFromGPT = async (prompt) => {
     },
     {
       headers: {
-        Authorization: `Bearer YOUR_OPENAI_API_KEY`,
+        Authorization: ``,
         "Content-Type": "application/json",
       },
     }

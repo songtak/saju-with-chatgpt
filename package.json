@@ -1,5 +1,5 @@
 {
-  "name": "mt_recommender",
+  "name": "saju-with-chatgpt",
   "version": "0.1.0",
   "private": true,
   "engines": {
@@ -59,6 +59,7 @@
   },
   "homepage": "https://songtak.github.io/MtRecommender/",
   "devDependencies": {
+    "@types/lodash": "^4.14.199",
     "gh-pages": "^6.0.0"
   }
 }
