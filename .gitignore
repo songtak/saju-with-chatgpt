@@ -1,0 +1,5 @@
+# kor_bac.json
+yarn.lock
+node_modules
+# .env
+package-lock.json
