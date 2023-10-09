@@ -9,7 +9,7 @@ const OPENAI_ENDPOINT = "https://api.openai.com/v1/chat/completions";
 
 export const getResponseFromGPT = async (prompt) => {
   console.log(
-    "process.env.REACT_APP_OPENAI_API_KEY !!!",
+    "process.env.REACT_APP_OPENAI_API_KEY",
     process.env.REACT_APP_OPENAI_API_KEY
   );
   const response = await axios.post(
