@@ -137,10 +137,8 @@ const App = () => {
   const handleClickSaveBirthDate = async () => {
     setResponse("loading");
     const ganzhi = getGanZhiFromDateStr(String(selectedDate));
-    console.log("ganzhi", ganzhi);
-    // 신축 을유 경인의 사주에 따른 운세나 특징은 어떻게 되나요? 이걸 송민지에게 설명하듯 알려주세요
-    const dddddd = `[${ganzhi}]의 사주에 따른 운세나 특징은 어떻게 되나요? 이걸 자세하게 풀어서 ${userName}에게 설명하듯 알려주세요`;
-    const gptResponse = await getResponseFromGPT(dddddd);
+    const q = `[${ganzhi}]의 사주에 따른 운세나 특징은 어떻게 되나요? 이걸 자세하게 풀어서 ${userName}에게 설명하듯 알려주세요`;
+    const gptResponse = await getResponseFromGPT(q);
     setResponse(gptResponse);
   };
 
