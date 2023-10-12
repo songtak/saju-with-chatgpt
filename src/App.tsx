@@ -161,9 +161,6 @@ const App = () => {
         <p>{response}</p>
       </div> */}
 
-      <div style={{ paddingTop: "30px", fontSize: "30", fontWeight: 700 }}>
-        chatGpt가 알려주는 {userName}님의 사주입니다.
-      </div>
       {typeof response === "undefined" && (
         <>
           <div style={{ paddingTop: "30px" }}>
@@ -212,7 +209,14 @@ const App = () => {
           <div>시간이 최대 2분 소요됩니다.</div>
         </>
       )}
-      {typeof response !== "undefined" && <p>{response}</p>}
+      {typeof response !== "undefined" && (
+        <div style={{ paddingTop: "30px", fontSize: "30", fontWeight: 700 }}>
+          ChatGpt가 알려주는 {userName}님의 사주입니다.
+          <div style={{ paddingTop: "30px" }}>
+            <p>{response}</p>
+          </div>
+        </div>
+      )}
 
       <div style={{ paddingTop: "40px" }}>songtak</div>
     </div>
