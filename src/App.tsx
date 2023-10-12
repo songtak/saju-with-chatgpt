@@ -148,7 +148,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <div style={{ paddingTop: "30px", fontSize: "30" }}>해피사주</div>
+      <div className="title">해피사주</div>
       {/* <div>
         <form onSubmit={handleOnSubmit}>
         <input
@@ -210,15 +210,21 @@ const App = () => {
         </>
       )}
       {typeof response !== "undefined" && (
-        <div style={{ paddingTop: "30px", fontSize: "30", fontWeight: 700 }}>
-          ChatGpt가 알려주는 {userName}님의 사주입니다.
+        <div>
+          {response !== "loading" && (
+            <div
+              style={{ paddingTop: "30px", fontSize: "30", fontWeight: 700 }}
+            >
+              ChatGpt가 알려주는 {userName}님의 사주입니다.
+            </div>
+          )}
           <div style={{ paddingTop: "30px" }}>
             <p>{response}</p>
           </div>
         </div>
       )}
 
-      <div style={{ paddingTop: "40px" }}>songtak</div>
+      <div className="footer">songtak</div>
     </div>
   );
 };
