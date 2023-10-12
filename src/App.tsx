@@ -151,16 +151,19 @@ const App = () => {
       <div style={{ paddingTop: "30px", fontSize: "30" }}>해피사주</div>
       {/* <div>
         <form onSubmit={handleOnSubmit}>
-          <input
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            placeholder="Enter your question..."
-          />
-          <button type="submit">Send</button>
+        <input
+        value={input}
+        onChange={(e) => setInput(e.target.value)}
+        placeholder="Enter your question..."
+        />
+        <button type="submit">Send</button>
         </form>
         <p>{response}</p>
       </div> */}
 
+      <div style={{ paddingTop: "30px", fontSize: "30", fontWeight: 700 }}>
+        chatGpt가 알려주는 {userName}님의 사주입니다.
+      </div>
       {typeof response === "undefined" && (
         <>
           <div style={{ paddingTop: "30px" }}>
@@ -211,7 +214,7 @@ const App = () => {
       )}
       {typeof response !== "undefined" && <p>{response}</p>}
 
-      <div style={{ paddingTop: "40px" }}>songtak 2023.10.08</div>
+      <div style={{ paddingTop: "40px" }}>songtak</div>
     </div>
   );
 };
