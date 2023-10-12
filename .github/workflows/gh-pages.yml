@@ -13,8 +13,8 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Use Environment Secrets
-        run: |
-        echo "REACT_APP_OPENAI_API_KEY=${{ secrets.REACT_APP_OPENAI_API_KEY }}" >> $GITHUB_ENV
+        run: echo "$SECRETS_CONTEXT"
+        env: REACT_APP_OPENAI_API_KEY: ${{ secrets.REACT_APP_OPENAI_API_KEY }}
 
       - name: Cache dependencies
         uses: actions/cache@v2
