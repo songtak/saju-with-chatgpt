@@ -1,5 +1,5 @@
-// api.js
 import axios from "axios";
+import CryptoJS from "crypto-js";
 
 // const OPENAI_ENDPOINT = "https://api.openai.com/v1/engines/davinci/completions";
 // const OPENAI_ENDPOINT = "https://api.openai.com/v1/completions";
@@ -8,6 +8,18 @@ const OPENAI_ENDPOINT = "https://api.openai.com/v1/chat/completions";
 //   "https://api.openai.com/v1/models/gpt-3.5-turbo-instruct";
 
 export const getResponseFromGPT = async (prompt) => {
+  var openApiToken;
+
+  const api_key =
+    "U2FsdGVkX1+u5qamiTj7cGJ8o0NUBEMPli282MC47+s+Q+k/bF+gGjstgopCs+RH+Jl2dSoUIQvhm79C2aent4IZBaQzOEDBVLVyia5mD8c=";
+
+  if (typeof process.env.REACT_APP_DEC_KEY === "string") {
+    openApiToken = CryptoJS.AES.decrypt(
+      api_key,
+      process.env.REACT_APP_DEC_KEY
+    ).toString(CryptoJS.enc.Utf8);
+  }
+
   const response = await axios.post(
     OPENAI_ENDPOINT,
     {
@@ -26,7 +38,7 @@ export const getResponseFromGPT = async (prompt) => {
     },
     {
       headers: {
-        Authorization: `Bearer ${process.env.REACT_APP_OPENAI_API_KEY}`,
+        Authorization: `Bearer ${openApiToken}`,
         "Content-Type": "application/json",
       },
     }
