@@ -28,6 +28,17 @@ const App = () => {
     setResponse(gptResponse);
   };
 
+  const getDeviceType: any = () => {
+    const ua = navigator.userAgent;
+    if (/(android)/i.test(ua)) {
+      return "android";
+    } else if (/(ipod|iphone|ipad)/i.test(ua)) {
+      return "ios";
+    } else {
+      return "unknown";
+    }
+  };
+
   type Gan =
     | "갑"
     | "을"
