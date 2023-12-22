@@ -47,6 +47,5 @@ export const getResponseFromGPT = async (prompt) => {
   );
 
   // return response.data.choices[0].text.trim();
-  // return response.data.choices[0].message.content;
-  return response.data.data[0].url;
+  return response.data.choices[0].message.content;
 };
